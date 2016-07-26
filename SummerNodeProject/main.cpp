@@ -7,8 +7,15 @@
 //
 
 #include <iostream>
+#include "Controller/NodeController.hpp"
 
-int main(int argc, const char * argv[]) {
+int main()
+{
+    std::cout << "Starting NodeController!\n" <<std::endl;
+    NodeController * app = new NodeController();
+    app->start();
+    std::cout << "Ending NodeController" <<std::endl;
+    
     return 0;
 }
 
