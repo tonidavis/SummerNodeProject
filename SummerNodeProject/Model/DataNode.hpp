@@ -20,6 +20,8 @@ private:
     
     
 public:
+    DataNode();
+    DataNode(Type nodeData);
     void setDataNode(Type nodeData);
     void setNodePointer(DataNode * nodePointer);
     Type getDataNode();
