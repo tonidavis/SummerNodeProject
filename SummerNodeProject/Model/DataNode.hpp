@@ -11,4 +11,21 @@
 
 #include <stdio.h>
 
+template <class Type>
+class DataNode
+{
+private:
+    Type nodeData;
+    DataNode * nodePointer;
+    
+    
+public:
+    void setDataNode(Type nodeData);
+    void setNodePointer(DataNode * nodePointer);
+    Type getDataNode();
+    DataNode * getNodePointer();
+    
+};
+
+
 #endif /* DataNode_hpp */
