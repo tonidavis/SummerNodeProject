@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A450F0571D47FE0A00F015F0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F0561D47FE0A00F015F0 /* main.cpp */; };
+		A450F05F1D47FFAC00F015F0 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F05D1D47FFAC00F015F0 /* DataNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A450F0531D47FE0A00F015F0 /* SummerNodeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SummerNodeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		A450F0561D47FE0A00F015F0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A450F05D1D47FFAC00F015F0 /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataNode.cpp; path = "untitled folder/DataNode.cpp"; sourceTree = "<group>"; };
+		A450F05E1D47FFAC00F015F0 /* DataNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DataNode.hpp; path = "untitled folder/DataNode.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +61,18 @@
 			isa = PBXGroup;
 			children = (
 				A450F0561D47FE0A00F015F0 /* main.cpp */,
+				A450F0601D48000200F015F0 /* Model */,
 			);
 			path = SummerNodeProject;
+			sourceTree = "<group>";
+		};
+		A450F0601D48000200F015F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A450F05D1D47FFAC00F015F0 /* DataNode.cpp */,
+				A450F05E1D47FFAC00F015F0 /* DataNode.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A450F0571D47FE0A00F015F0 /* main.cpp in Sources */,
+				A450F05F1D47FFAC00F015F0 /* DataNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
