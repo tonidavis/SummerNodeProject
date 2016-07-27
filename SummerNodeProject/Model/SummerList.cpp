@@ -60,14 +60,23 @@ void SummerList<Type>  :: addAtIndex(int index, Type data)
     
 }
 
+//create add method
 template <class Type>
 void SummerList<Type>  :: add(Type data)
 {
     DataNode<Type> * newNode= new DataNode<Type>(data);
-
-    end->setNodePointer(newNode);
-    end = newNode;
+    
+    if(size==0)
+    {
+        front = newNode;
+        end = newNode;
+    }
+    else
+    {
+        end->setNodePointer(newNode);
+        end = newNode;
+    }
 }
 
-    
+
     
