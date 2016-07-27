@@ -16,7 +16,7 @@ template <class Type>
 class SummerList
 {
 private:
-    int length;
+    int size;
     DataNode<Type> * front;
     DataNode<Type> * end;
 public:
