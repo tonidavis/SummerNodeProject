@@ -10,7 +10,7 @@
 #include "../Model/DataNode.cpp"
 #include <string>
 #include <iostream>
-#include "../Model/SummerArray.hpp"
+#include "../Model/SummerArray.cpp"
 
 using namespace std;
 
@@ -23,6 +23,12 @@ void NodeController :: tryNodes()
     cout << "after" << endl;
     numberNode.setNodeData(231);
     cout << numberNode.getNodeData() << endl;
+}
+
+
+void NodeController :: tryArray()
+{
+    SummerArray<int> testArray(3);
 }
 
 void NodeController :: start()

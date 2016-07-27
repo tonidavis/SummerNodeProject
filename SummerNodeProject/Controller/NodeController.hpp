@@ -18,4 +18,5 @@ private:
 public:
     void start();
 };
+
 #endif /* NodeController_hpp */
