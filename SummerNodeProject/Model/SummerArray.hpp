@@ -23,7 +23,7 @@ private:
 public:
     SummerArray(int length);
     
-    Type getFormIndex(int index);
+    Type getFromIndex(int index);
     Type getFirst();
     Type getLast();
     void setAtIndex(int index, Type data);

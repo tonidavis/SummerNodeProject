@@ -29,9 +29,10 @@ void NodeController :: tryNodes()
 void NodeController :: tryArray()
 {
     SummerArray<int> testArray(3);
+   // int derpy[3]; does the same as SummerArray
 }
 
 void NodeController :: start()
 {
-    tryNodes();
+    tryArray();
 }
