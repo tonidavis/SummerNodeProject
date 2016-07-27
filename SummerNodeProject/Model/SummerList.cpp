@@ -29,7 +29,7 @@ void SummerList<Type>  :: addAtIndex(int index, Type data)
     
     if(index == 0)
     {
-        addAtFront(data):
+        addAtFront(data);
     }
     
     else if(index == size-1)
@@ -109,22 +109,44 @@ Type SummerList<Type> :: remove(int index)
     DataNode<Type> * removeNode = nullptr;
     DataNode<Type> * next = nullptr;
     
-    for(int position = 0; position < index - 1; position++)
+    if(size == 1)
     {
-        indexPointer = indexPointer->getNodePointer();
+        removeValue = front->getNodeData();
+        
+        delete indexPointer;
+
+        front = nullptr;
+        end = nullptr;
     }
-    
-    removeNode = indexPointer->getNodePointer();
-    next = removeNode->getNodePointer();
-    
-    indexPointer->setNodePointer(next);
-    removeNode->setNodePointer(nullptr);
-    
-    removeValue = removeNode->getNodeData();
-    
-    delete removeNode;
-    
-    
+     else if(index==0)
+    {
+        removeValue = front->getNodeData();
+        front = front->getNodePointer();
+        delete indexPointer;
+    }
+       else
+       {
+           for(int position = 0; position < index - 1; position++)
+           {
+               indexPointer = indexPointer->getNodePointer();
+           }
+           
+           removeNode = indexPointer->getNodePointer();
+           next = removeNode->getNodePointer();
+           
+           if(removeNode == end)
+           {
+               end = indexPointer;
+           }
+           indexPointer->setNodePointer(next);
+           removeNode->setNodePointer(nullptr);
+           
+           removeValue = removeNode->getNodeData();
+           
+           delete removeNode;
+       }
+     
+
     return removeValue;
     
 }
