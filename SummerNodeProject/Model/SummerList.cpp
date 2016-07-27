@@ -149,7 +149,7 @@ Type SummerList<Type> :: remove(int index)
            delete removeNode;
        }
     
-
+    size--;
     return removeValue;
     
 }
