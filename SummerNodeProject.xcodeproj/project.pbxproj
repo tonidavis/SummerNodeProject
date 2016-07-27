@@ -10,6 +10,7 @@
 		A450F0571D47FE0A00F015F0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F0561D47FE0A00F015F0 /* main.cpp */; };
 		A450F0641D48011E00F015F0 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F0621D48011E00F015F0 /* DataNode.cpp */; };
 		A450F06C1D4810E100F015F0 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F06A1D4810E100F015F0 /* NodeController.cpp */; };
+		A497926B1D4907FC002C715A /* SummerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A49792691D4907FC002C715A /* SummerArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		A450F0631D48011E00F015F0 /* DataNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataNode.hpp; sourceTree = "<group>"; };
 		A450F06A1D4810E100F015F0 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NodeController.cpp; path = Controller/NodeController.cpp; sourceTree = "<group>"; };
 		A450F06B1D4810E100F015F0 /* NodeController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = NodeController.hpp; path = Controller/NodeController.hpp; sourceTree = "<group>"; };
+		A49792691D4907FC002C715A /* SummerArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SummerArray.cpp; sourceTree = "<group>"; };
+		A497926A1D4907FC002C715A /* SummerArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SummerArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 			children = (
 				A450F0621D48011E00F015F0 /* DataNode.cpp */,
 				A450F0631D48011E00F015F0 /* DataNode.hpp */,
+				A49792691D4907FC002C715A /* SummerArray.cpp */,
+				A497926A1D4907FC002C715A /* SummerArray.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A497926B1D4907FC002C715A /* SummerArray.cpp in Sources */,
 				A450F06C1D4810E100F015F0 /* NodeController.cpp in Sources */,
 				A450F0571D47FE0A00F015F0 /* main.cpp in Sources */,
 				A450F0641D48011E00F015F0 /* DataNode.cpp in Sources */,
