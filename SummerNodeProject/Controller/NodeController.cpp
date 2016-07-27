@@ -10,6 +10,7 @@
 #include "../Model/DataNode.cpp"
 #include <string>
 #include <iostream>
+#include "../Model/SummerArray.hpp"
 
 using namespace std;
 
