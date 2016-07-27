@@ -84,3 +84,10 @@ void SummerArray<Type> :: setAtIndex(int index, Type data)
 //overwrites the value in indexPointer
     indexPointer->setNodeData(data);
 }
+
+template <class Type>
+int SummerArray<Type> :: getLength()
+{
+    //instead of *nameOfArray/sizeof(type);
+    return this->length;
+}
