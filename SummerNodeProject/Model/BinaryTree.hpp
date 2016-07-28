@@ -14,10 +14,11 @@
 
 template <class Type>
 class BinaryTree
-
+//framework for class
 {
 private:
     BinaryTreeNode<Type> * root;
+    void insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode);
     
 public:
     BinaryTree();
