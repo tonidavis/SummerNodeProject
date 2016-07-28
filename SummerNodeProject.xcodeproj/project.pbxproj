@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A44187391D4A53DA00E6D110 /* BinaryTreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A44187371D4A53DA00E6D110 /* BinaryTreeNode.cpp */; };
+		A441873C1D4A697700E6D110 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A441873A1D4A697700E6D110 /* BinaryTree.cpp */; };
 		A450F0571D47FE0A00F015F0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F0561D47FE0A00F015F0 /* main.cpp */; };
 		A450F0641D48011E00F015F0 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F0621D48011E00F015F0 /* DataNode.cpp */; };
 		A450F06C1D4810E100F015F0 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F06A1D4810E100F015F0 /* NodeController.cpp */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		A44187371D4A53DA00E6D110 /* BinaryTreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeNode.cpp; sourceTree = "<group>"; };
 		A44187381D4A53DA00E6D110 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		A441873A1D4A697700E6D110 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
+		A441873B1D4A697700E6D110 /* BinaryTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinaryTree.hpp; sourceTree = "<group>"; };
 		A450F0531D47FE0A00F015F0 /* SummerNodeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SummerNodeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		A450F0561D47FE0A00F015F0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A450F0621D48011E00F015F0 /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataNode.cpp; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				A497926D1D4944C3002C715A /* SummerList.hpp */,
 				A44187371D4A53DA00E6D110 /* BinaryTreeNode.cpp */,
 				A44187381D4A53DA00E6D110 /* BinaryTreeNode.hpp */,
+				A441873A1D4A697700E6D110 /* BinaryTree.cpp */,
+				A441873B1D4A697700E6D110 /* BinaryTree.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				A497926B1D4907FC002C715A /* SummerArray.cpp in Sources */,
 				A450F06C1D4810E100F015F0 /* NodeController.cpp in Sources */,
 				A44187391D4A53DA00E6D110 /* BinaryTreeNode.cpp in Sources */,
+				A441873C1D4A697700E6D110 /* BinaryTree.cpp in Sources */,
 				A450F0571D47FE0A00F015F0 /* main.cpp in Sources */,
 				A497926E1D4944C3002C715A /* SummerList.cpp in Sources */,
 				A450F0641D48011E00F015F0 /* DataNode.cpp in Sources */,
