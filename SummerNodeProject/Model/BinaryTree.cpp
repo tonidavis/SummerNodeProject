@@ -23,29 +23,30 @@ void BinaryTree<Type> :: insert(Type data)
 {
     BinaryTreeNode<Type>* insertedNode = new BinaryTreeNode<Type>(data);
 //recursions--method calls its self
-    insert(insertedNode, root);
+    root = insert(insertedNode, root);
     
 }
 
 template <class Type>
-void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
+    BinaryTreeNode<Type> * BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
     {
         //compare
         //base case--if it is null
         if(currentRootNode == nullptr)
         {
-            currentRootNode = insertedNode;
+            return insertedNode;
         }
         //if less than root go left
         else if(insertedNode->getNodeData() <currentRootNode->getNodeData())
         {
-            insert(insertedNode, currentRootNode->getLeftChild());
+            currentRootNode->setLeftChild(insert(insertedNode, currentRootNode->getLeftChild()));
         }
         //if not, then go right
         else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
         {
-            insert(insertedNode, currentRootNode->getRightChild());
+            currentRootNode->setRightChild (insert(insertedNode, currentRootNode->getRightChild()));
         }
+        return currentRootNode;
     }
     
 template <class Type>
@@ -66,9 +67,9 @@ void BinaryTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
     if(currentNode != nullptr)
     {
         //
-        cout << currentNode->currentNode->getNodeData() <<",";
+        cout << currentNode->getNodeData() <<",";
         preOrderTraversal(currentNode->getLeftChild());
-        preOrderTraversal(currentNode->getRighChild());
+        preOrderTraversal(currentNode->getRightChild());
     }
 }
 
@@ -79,8 +80,8 @@ void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
     {
         //
         postOrderTraversal(currentNode->getLeftChild());
-        postOrderTraversal(currentNode->getRighChild());
-        cout << currentNode->currentNode->getNodeData() <<",";
+        postOrderTraversal(currentNode->getRightChild());
+        cout << currentNode->getNodeData() <<",";
     }
 }
 
