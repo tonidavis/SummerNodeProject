@@ -36,13 +36,21 @@ void NodeController :: tryArray()
 void NodeController :: tryTree()
 {
     BinaryTree<int> sampleTree;
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(7);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(5);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(213);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(-213);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(5);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(123124);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     sampleTree.insert(0);
+    cout << "The tree is this big: " << sampleTree.getSize() << endl;
     
     cout << "The in order traversal" << endl;
     sampleTree.inOrderTraversal(sampleTree.getRoot());
@@ -58,6 +66,7 @@ void NodeController :: tryTree()
 }
 void NodeController :: start()
 {
+
     tryTree();
 }
 
