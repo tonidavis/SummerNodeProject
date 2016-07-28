@@ -30,7 +30,7 @@ template <class Type>
 void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeNode<Type> * currentRootNode)
     {
         //compare
-        //base case if it is null
+        //base case--if it is null
         if(currentRootNode == nullptr)
         {
             currentRootNode = insertedNode;
