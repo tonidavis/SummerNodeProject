@@ -153,3 +153,21 @@ Type SummerList<Type> :: remove(int index)
     return removeValue;
     
 }
+
+template <class Type>
+bool SummerList<Type> :: contains(Type data)
+{
+    bool isInList;
+    
+    DataNode<Type> containsPointer = front;
+    for(int index = 0; index < size; index++)
+    {
+        if (data == containsPointer->getNodeData())
+        {
+            isInList = true;
+        }
+        containsPointer = containsPointer->getNodePointer();
+    }
+    return isInList;
+    
+}
