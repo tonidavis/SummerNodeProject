@@ -7,6 +7,9 @@
 //
 
 #include "BinaryTree.hpp"
+#include <iostream>
+
+using namespace std;
 
 template <class Type>
 BinaryTree<Type> :: BinaryTree()
@@ -47,4 +50,38 @@ void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeN
         }
     }
     
+template <class Type>
+void BinaryTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        //goes left as far as it can, then up and right
+        inOrderTraversal(currentNode->getLeftChild());
+        cout << currentNode->currentNode->getNodeData() <<",";
+        inOrderTraversal(currentNode->getRighChild());
+    }
+}
 
+template <class Type>
+void BinaryTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        //
+        cout << currentNode->currentNode->getNodeData() <<",";
+        preOrderTraversal(currentNode->getLeftChild());
+        preOrderTraversal(currentNode->getRighChild());
+    }
+}
+
+template <class Type>
+void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if(currentNode != nullptr)
+    {
+        //
+        postOrderTraversal(currentNode->getLeftChild());
+        postOrderTraversal(currentNode->getRighChild());
+        cout << currentNode->currentNode->getNodeData() <<",";
+    }
+}
