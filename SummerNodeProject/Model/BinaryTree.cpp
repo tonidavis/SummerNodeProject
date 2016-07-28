@@ -21,12 +21,10 @@ BinaryTree<Type> :: BinaryTree()
 template <class Type>
 void BinaryTree<Type> :: insert(Type data)
 {
-    BinaryTreeNode<Type>* insertedNode(data);
-    {
-       BinaryTreeNode<Type> * insertedNode = new BinaryTreeNode<Type>(data);
-        //recursions--method calls its self
-        insert(insertedNode, root);
-    }
+    BinaryTreeNode<Type>* insertedNode = new BinaryTreeNode<Type>(data);
+//recursions--method calls its self
+    insert(insertedNode, root);
+    
 }
 
 template <class Type>
@@ -41,12 +39,12 @@ void BinaryTree<Type> :: insert(BinaryTreeNode<Type> * insertedNode, BinaryTreeN
         //if less than root go left
         else if(insertedNode->getNodeData() <currentRootNode->getNodeData())
         {
-            insert(insertedNode), currentRootNode->getLeftChild();
+            insert(insertedNode, currentRootNode->getLeftChild());
         }
         //if not, then go right
         else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
         {
-            insesrt(insertedNode, currentRootNode->getRightChild());
+            insert(insertedNode, currentRootNode->getRightChild());
         }
     }
     
@@ -57,8 +55,8 @@ void BinaryTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * currentNode)
     {
         //goes left as far as it can, then up and right
         inOrderTraversal(currentNode->getLeftChild());
-        cout << currentNode->currentNode->getNodeData() <<",";
-        inOrderTraversal(currentNode->getRighChild());
+        cout << currentNode->getNodeData() << ", ";
+        inOrderTraversal(currentNode->getRightChild());
     }
 }
 
@@ -84,4 +82,10 @@ void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
         postOrderTraversal(currentNode->getRighChild());
         cout << currentNode->currentNode->getNodeData() <<",";
     }
+}
+
+template <class Type>
+BinaryTreeNode<Type> * BinaryTree<Type> :: getRoot()
+{
+    return root;
 }
