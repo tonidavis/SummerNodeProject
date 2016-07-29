@@ -7,3 +7,26 @@
 //
 
 #include "HashTable2016.hpp"
+
+template <class Type>
+HashTable<Type> :: HashTable()
+{
+    this->size = 0;
+    this->capacity = 101;
+    this->efficiencyPercentage = .666;
+    
+    this->front = new HashNode<Type>*();
+           HashNode<Type> * currentEnd = front;
+           
+    //loop to create the first arrary of nodes for storage.
+           //create node, goto end, connect node, shift front
+           
+           for(int index =1; index<capacity; index++)
+           {
+               HashNode<Type> * next = new HashNode<Type>();
+               currentEnd->setNode(next);
+               currentEnd = next;
+           }
+           
+    
+}
