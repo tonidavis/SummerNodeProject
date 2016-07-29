@@ -24,7 +24,7 @@ private:
     void resize();
     long nextPrime(long current);
     long findPosition(Type data);
-    long handCollision(Type data);
+    long handleCollision(Type data, long currentPosition);
 public:
     HashTable();
     void add(Type data);
