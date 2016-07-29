@@ -14,6 +14,8 @@
 		A450F06C1D4810E100F015F0 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A450F06A1D4810E100F015F0 /* NodeController.cpp */; };
 		A497926B1D4907FC002C715A /* SummerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A49792691D4907FC002C715A /* SummerArray.cpp */; };
 		A497926E1D4944C3002C715A /* SummerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A497926C1D4944C3002C715A /* SummerList.cpp */; };
+		A4A282781D4BA55900E8C318 /* HashTable2016.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4A282761D4BA55900E8C318 /* HashTable2016.cpp */; };
+		A4A2827B1D4BB05900E8C318 /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4A282791D4BB05900E8C318 /* HashNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		A497926A1D4907FC002C715A /* SummerArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SummerArray.hpp; sourceTree = "<group>"; };
 		A497926C1D4944C3002C715A /* SummerList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SummerList.cpp; sourceTree = "<group>"; };
 		A497926D1D4944C3002C715A /* SummerList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SummerList.hpp; sourceTree = "<group>"; };
+		A4A282761D4BA55900E8C318 /* HashTable2016.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashTable2016.cpp; sourceTree = "<group>"; };
+		A4A282771D4BA55900E8C318 /* HashTable2016.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HashTable2016.hpp; sourceTree = "<group>"; };
+		A4A282791D4BB05900E8C318 /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashNode.cpp; sourceTree = "<group>"; };
+		A4A2827A1D4BB05900E8C318 /* HashNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				A44187381D4A53DA00E6D110 /* BinaryTreeNode.hpp */,
 				A441873A1D4A697700E6D110 /* BinaryTree.cpp */,
 				A441873B1D4A697700E6D110 /* BinaryTree.hpp */,
+				A4A282761D4BA55900E8C318 /* HashTable2016.cpp */,
+				A4A282771D4BA55900E8C318 /* HashTable2016.hpp */,
+				A4A282791D4BB05900E8C318 /* HashNode.cpp */,
+				A4A2827A1D4BB05900E8C318 /* HashNode.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,8 +179,10 @@
 				A44187391D4A53DA00E6D110 /* BinaryTreeNode.cpp in Sources */,
 				A441873C1D4A697700E6D110 /* BinaryTree.cpp in Sources */,
 				A450F0571D47FE0A00F015F0 /* main.cpp in Sources */,
+				A4A2827B1D4BB05900E8C318 /* HashNode.cpp in Sources */,
 				A497926E1D4944C3002C715A /* SummerList.cpp in Sources */,
 				A450F0641D48011E00F015F0 /* DataNode.cpp in Sources */,
+				A4A282781D4BA55900E8C318 /* HashTable2016.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
