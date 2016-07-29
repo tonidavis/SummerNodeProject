@@ -27,6 +27,29 @@ HashTable<Type> :: HashTable()
                currentEnd->setNode(next);
                currentEnd = next;
            }
-           
-    
 }
+
+template <class Type>
+void HashTable<Type> :: add(Type data)
+{
+    if ((static_cast<double>(size) / capacity) >= efficiencyPercentage)
+    {
+        resize();
+    }
+
+    long position = findPosition(data);
+    
+    HashNode<Type> * indexPointer = front;
+    
+    for(int index = 0; index < position; index++)
+    {
+        indexPointer = indexPointer->getNode();
+    }
+    
+    indexPointer->setData(data);
+    indexPointer->setStuffed(true);
+     
+}
+
+
+
