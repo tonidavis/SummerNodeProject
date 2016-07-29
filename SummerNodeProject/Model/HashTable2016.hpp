@@ -29,6 +29,7 @@ public:
     HashTable();
     void add(Type data);
     bool remove(Type data);
+    void displayContents();
 };
 
 #endif /* HashTable2016_hpp */

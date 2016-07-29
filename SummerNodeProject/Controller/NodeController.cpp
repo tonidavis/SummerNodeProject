@@ -12,6 +12,7 @@
 #include <iostream>
 #include "../Model/SummerArray.cpp"
 #include "../Model/BinaryTree.cpp"
+#include "../Model/HashTable2016.cpp"
 
 using namespace std;
 
@@ -64,10 +65,24 @@ void NodeController :: tryTree()
     sampleTree.postOrderTraversal(sampleTree.getRoot());
     cout << endl;
 }
+
+void NodeController :: tryHash()
+{
+    HashTable<int> numbersInHash;
+    numbersInHash.add(123);
+    numbersInHash.add(342);
+    numbersInHash.add(1343535345);
+    cout << "Current Contents" << endl;
+    numbersInHash.add(2353646);
+    numbersInHash.add('d');
+    
+}
+
 void NodeController :: start()
 {
 
-    tryTree();
+    tryHash();
 }
+
 
 
